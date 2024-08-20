@@ -2,6 +2,9 @@
     --blacks: #141414;
     --whites: #F5F5F5;
 }
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: "Inter-Regular";
     src: url(assets/fonts/Inter_28pt-Regular.ttf);
