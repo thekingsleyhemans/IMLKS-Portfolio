@@ -96,6 +96,7 @@ a{
 }
 .hamburger-btn img{
     width: 1.5rem;
+    cursor: pointer;
 }
 section{
     background-color: var(--blacks);
