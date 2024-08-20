@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMLKSTUDIO - Creative Agency</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/faviconm.png" type="image/png">
 </head>
 <body>
+    <div class="overlay">
+        <div class="overlay-wrap">
+            <div class="close-wrap">
+                close
+            </div>
+            <div class="menu-links-wrap">
+                <div class="menu-link-item">
+                    <a href="index.html" class="menu-link"><p class="menu-text">Home</p></a>
+                    <a href="works.html" class="menu-link"><p class="menu-text">Our Works</p></a>
+                    <a href="about.html" class="menu-link"><p class="menu-text">Who We Are</p></a>
+                    <a href="faq.html" class="menu-link"><p class="menu-text">FAQs</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="container is--header">
             <div class="logo"><h1>IMLKSTUDIO</h1></div>
             <div class="cta-ham-wrap">
                 <a href="#" class="header-cta"> Say Hi!</a>
                 <div class="hamburger-btn">
-                    <img src="/assets/hamburger.svg" alt="">
+                    <img src="assets/hamburger.svg" alt="">
                 </div>
             </div>
         </div>
@@ -24,7 +40,7 @@
                 <div class="heroh1"><h1 class="herotext">creating meaningful<br> connections between<br> brands and people.</h1></div>
                 <a href="#" class="hero-cta is-button">See our works</a>
             </div>
-            <div class="heroimg"><img src="/assets/photos/MLK9875-scaled.jpg" alt=""></div>
+            <div class="heroimg"><img src="assets/photos/MLK9875-scaled.jpg" alt=""></div>
         </div>
     </section>
     <section class="know-us">
@@ -267,7 +283,7 @@
                 <p>Discover the impact we've created for<br> brands around the world.</p>
             </div>
             <div class="portfolio-wrap">
-                <img class="portfolio-image" src="/assets/projects/MERHOIESIR/Artboard 10.jpg" alt="">
+                <img class="portfolio-image" src="assets/projects/MERHOIESIR/Artboard 10.jpg" alt="">
                 <div class="portfolio-details extra-pad">
                     <div class="portfolio-title-serv">
                         <h3>MERHOIESIR</h3>
@@ -278,7 +294,7 @@
                 </div>
             </div>
             <div class="portfolio-wrap">
-                <img class="portfolio-image" src="/assets/projects/Portraits/Artboard 5.jpg" alt="">
+                <img class="portfolio-image" src="assets/projects/Portraits/Artboard 5.jpg" alt="">
                 <div class="portfolio-details extra-pad">
                     <div class="portfolio-title-serv">
                         <h3>Portraits</h3>
@@ -313,9 +329,15 @@
                 </div>
                 <div class="footer-item">
                     <h4>useful links</h4>
-                    <p>home</p>
-                    <p>our works</p>
-                    <p>who we are</p>
+                    <a href="index.html">
+                        <p>home</p>
+                    </a>
+                    <a href="works.html">
+                        <p>our works</p>
+                    </a>
+                    <a href="about.html">
+                        <p>who we are</p>
+                    </a>
                 </div>
                 <div class="footer-item">
                     <h4>Connect with us</h4>
@@ -333,5 +355,6 @@
         </div>
         <p class="footerbigtext">IMLKSTUDIO</p>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
