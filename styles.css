@@ -519,7 +519,7 @@ section{
     color: var(--whites);
     text-transform: uppercase;
     font-family: "Montserrat-SemiBold";
-    font-size: 5rem;
+    font-size: 6rem;
     transform: translateY(60rem);
 }
 .menu-text{
