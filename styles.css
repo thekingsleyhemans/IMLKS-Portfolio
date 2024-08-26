@@ -399,6 +399,7 @@ section{
     gap: 3rem;
 } */
 .card-slider-wrapper {
+    padding-top: 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust based on number of cards */
     gap: 3rem;
