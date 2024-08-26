@@ -401,7 +401,7 @@ section{
 .card-slider-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust based on number of cards */
-    gap: 2rem;
+    gap: 3rem;
     animation: sliderr 20s linear infinite;
   }
   
