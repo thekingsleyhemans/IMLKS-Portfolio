@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who We Are</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="slick/slick.css">
 </head>
 
 <body>
@@ -17,10 +16,18 @@
             </div>
             <div class="menu-links-wrap">
                 <div class="menu-link-item">
-                    <a href="index.html" class="menu-link"><p class="menu-text">Home</p></a>
-                    <a href="works.html" class="menu-link"><p class="menu-text">Our Works</p></a>
-                    <a href="about.html" class="menu-link"><p class="menu-text">Who We Are</p></a>
-                    <a href="faq.html" class="menu-link"><p class="menu-text">FAQs</p></a>
+                    <a href="index.html" class="menu-link">
+                        <p class="menu-text">Home</p>
+                    </a>
+                    <a href="works.html" class="menu-link">
+                        <p class="menu-text">Our Works</p>
+                    </a>
+                    <a href="about.html" class="menu-link">
+                        <p class="menu-text">Who We Are</p>
+                    </a>
+                    <a href="faq.html" class="menu-link">
+                        <p class="menu-text">FAQs</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -28,8 +35,8 @@
     <div class="header">
         <div class="container is--header">
             <div class="logo"><a href="">
-                <h1>IMLKSTUDIO</h1>
-            </a></div>
+                    <h1>IMLKSTUDIO</h1>
+                </a></div>
             <div class="cta-ham-wrap">
                 <a href="#" class="header-cta"> Say Hi!</a>
                 <div class="hamburger-btn">
@@ -49,59 +56,60 @@
     </section>
 
     <section class="values-wrap grid-cards">
-        <div class="card-wrap">
-            <div class="card">
-                <div class="card-img">
-                    <img src="assets/photos/Untitled-1.jpg" alt="">
-                </div>
-                <div class="card-details">
-                    <h3>Creativity is hope</h3>
-                    <p>We believe in making the world a better place through creativity, so it doesn't matter if it's a
-                        personal brand, startup or agency; our Process remains the same because we care about your
-                        vision.
-                         </p>
-                </div>
-            </div>
-        </div>
-        <div class="card-wrap">
-            <div class="card">
-                <div class="card-img">
-                    <img src="assets/photos/Untitled-1.jpg" alt="">
-                </div>
-                <div class="card-details">
-                    <h3>Creativity is hope</h3>
-                    <p>We believe in making the world a better place through creativity, so it doesn't matter if it's a
-                        personal brand, startup or agency; our Process remains the same because we care about your
-                        vision.
-                         </p>
+        <div class="card-slider-wrapper">
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/photos/Untitled-1.jpg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <h3>Creativity is hope</h3>
+                        <p>We believe in making the world a better place through creativity, so it doesn't matter if
+                            it's a
+                            personal brand, startup or agency; our Process remains the same because we care about your
+                            vision.
+                             </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-wrap">
-            <div class="card">
-                <div class="card-img">
-                    <img src="assets/photos/Untitled-1.jpg" alt="">
-                </div>
-                <div class="card-details">
-                    <h3>Creativity is hope</h3>
-                    <p>We believe in making the world a better place through creativity, so it doesn't matter if it's a
-                        personal brand, startup or agency; our Process remains the same because we care about your
-                        vision.
-                         </p>
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/photos/p1.jpg">
+                    </div>
+                    <div class="card-details">
+                        <h3>Express yourself</h3>
+                        <p>Creativity exists in our expression, which ignites when everyone is empowered and can be
+                            themselves. Whether loud, quiet, weird, wild or unique to them, we dig it!
+                             </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-wrap">
-            <div class="card">
-                <div class="card-img">
-                    <img src="assets/photos/Untitled-1.jpg" alt="">
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/photos/express.jpg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <h3>Persistent curiosity</h3>
+                        <p>We explore the world around us, question the norm, challenge common wisdom with constant
+                            wonder and infuse that in our work. That is how we roll!
+                             </p>
+                    </div>
                 </div>
-                <div class="card-details">
-                    <h3>Creativity is hope</h3>
-                    <p>We believe in making the world a better place through creativity, so it doesn't matter if it's a
-                        personal brand, startup or agency; our Process remains the same because we care about your
-                        vision.
-                         </p>
+            </div>
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/photos/p2.jpg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <h3>Teamwork</h3>
+                        <p>Creativity is connecting ideas from unrelated fields. We believe in teamwork, so we maintain
+                            a collaborative environment where each team member's voice is heard, valued, and respected
+                            so that their ideas benefit you.
+                             </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,9 +178,23 @@
         </div>
         <p class="footerbigtext">IMLKSTUDIO</p>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliderWrapper = document.querySelector('.card-slider-wrapper');
+            const cards = document.querySelectorAll('.card-wrap');
+            const cardCount = cards.length;
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            // Duplicate cards to create an infinite effect
+            for (let i = 0; i < cardCount; i++) {
+                const clone = cards[i].cloneNode(true);
+                sliderWrapper.appendChild(clone);
+            }
+
+            // Update the wrapper's grid columns to fit the new total number of cards
+            sliderWrapper.style.gridTemplateColumns = `repeat(${cardCount * 2}, 1fr)`;
+        });
+
+    </script>
     <script src="script.js"></script>
 </body>
 
