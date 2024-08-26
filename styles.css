@@ -1,9 +1,7 @@
 :root{
     --blacks: #141414;
     --whites: #F5F5F5;
-}
-html{
-    scroll-behavior: smooth;
+    --greys: #8b8b8b;
 }
 @font-face {
     font-family: "Inter-Regular";
@@ -69,6 +67,10 @@ a{
     font-size: 0.6rem;
     font-family: "Montserrat-SemiBold";
 }
+.logo a{
+    color: var(--whites);
+    cursor: pointer;
+}
 .cta-ham-wrap{
     display: flex;
     flex-direction: row;
@@ -84,6 +86,7 @@ a{
     font-family: "Inter-Regular";
     border-radius: 50rem;
 }
+
 .hamburger-btn{
     border: 1px solid var(--whites);
     width: 3.2rem;
@@ -94,9 +97,8 @@ a{
     padding: 1.2rem;
     cursor: pointer;
 }
-.hamburger-btn img{
+.hamburger-btn img , .close-wrap img{
     width: 1.5rem;
-    cursor: pointer;
 }
 section{
     background-color: var(--blacks);
@@ -362,6 +364,7 @@ section{
     font-size: 17.8rem;
     color: #2F2E2E;
     font-family: "Montserrat-SemiBold";
+    margin-bottom: -4.2rem;
 }
 .footer-top{
     width: 75%;
@@ -505,6 +508,13 @@ section{
     justify-content: flex-end;
     color: var(--whites);
 }
+.close-btn{
+    border: 1px solid var(--whites);
+    padding: 1rem;
+    border-radius: 500rem;
+    cursor: pointer;
+}
+
 .menu-link-item{
     display: flex;
     flex-direction: column;
@@ -519,10 +529,109 @@ section{
     color: var(--whites);
     text-transform: uppercase;
     font-family: "Montserrat-SemiBold";
-    font-size: 6rem;
+    font-size: 5rem;
     transform: translateY(60rem);
 }
 .menu-text{
     transition: all 1.2s ease-in-out;
 }
+/*Tabs and Accordion Styling*/
+
+.tabs{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+.tab-btn{
+    background-color: transparent;
+    border: 0px;
+    transition: all .3s ease-in-out;
+}
+.active-tab h2{
+    color: var(--whites) !important;
+}
+ .tab-btn h2{
+    color: var(--greys);
+    font-family: "Montserrat-Regular";
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+ }
+ .tab-btn h2 sup{
+    padding-right: 1rem;
+ }
+ .tab-content .tab-contents {
+    width: 100%;
+    display: none;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+}
+
+.tab-content .tab-contents.active-content {
+    display: block !important;
+}
+
+ .tab-contents h3 {
+    color: var(--whites);
+ }
+ /*.spacer-wrap{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+ }
+ .spacer-line{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--whites);
+    width: 85%;
+
+ }*/
+.accordion-content{
+    margin-top: 2rem;
+    border-top: 1px solid var(--whites);
+    padding-top: 3rem;
+
+}
+.accordion-content .label{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordion-content .label h3{
+    font-family: "Inter-Regular";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+.accordion-content .label::before{
+    content: '+';
+    color: var(--whites);
+    font-size: 1.5rem;
+
+}
+.accordion-content.active-toggle .label::before{
+    content: '-';
+    color: var(--whites);
+    font-size: 2rem;
+
+}
+.accordion-content .acc-answer p{
+    color: #C0C0C0;
+    font-family: "Inter-Regular";
+    width: 60%;
+}
+.accordion .accordion-content .acc-answer{
+    overflow: hidden;
+    height: 0vh;
+    transition: all 0.5s ease-in-out;
+    overflow-y: auto;
+}
+.accordion .accordion-content.active-toggle .acc-answer{
+    height: auto !important;
+}
+/*Responsive Breakpoints*/
 
