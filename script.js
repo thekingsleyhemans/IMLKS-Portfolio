@@ -7,8 +7,19 @@ const staggerDelay = 100; // Adjust the delay as needed
 // Add a transition to the overlay
 overlay.style.transition = 'transform 0.3s ease-in-out'; // Adjust duration and easing as needed
 
+// Function to disable scrolling
+function disableScrolling() {
+  document.body.style.overflow = 'hidden';
+}
+
+// Function to enable scrolling
+function enableScrolling() {
+  document.body.style.overflow = '';
+}
+
 openNav.addEventListener('click', () => {
   overlay.style.transform = 'translateY(0vh)';
+  disableScrolling(); // Disable scrolling
 
   overlay.addEventListener('transitionend', () => {
     menuItems.forEach((menuItem, index) => {
@@ -28,7 +39,9 @@ closeNav.addEventListener('click', () => {
 
   menuItems[menuItems.length - 1].addEventListener('transitionend', () => {
     overlay.style.transform = 'translateY(-100vh)';
+    enableScrolling(); // Enable scrolling
   }, { once: true });
 });
+
 
 
