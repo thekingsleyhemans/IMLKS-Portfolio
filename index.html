@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMLKSTUDIO - Creative Agency</title>
-    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/faviconm.png" type="image/png">
+  
 </head>
 
 <body>
@@ -35,7 +36,7 @@
     </div>
     <div class="header">
         <div class="container is--header">
-            <div class="logo"><a href="">
+            <div class="logo"><a href="index.html">
                     <h1>IMLKSTUDIO</h1>
                 </a></div>
             <div class="cta-ham-wrap">
@@ -46,6 +47,8 @@
             </div>
         </div>
     </div>
+    <div class="cursor-circle"></div>
+
     <section class="hero-landing">
         <div class="container is--landing">
             <div class="hero-wrap extra-pad">
@@ -308,7 +311,7 @@
                         <h3>MERHOIESIR</h3>
                         <p>Brand Identity</p>
                     </div>
-                    <a href="#" class="is-button">View Project</a>
+                    <a href="works/merhoiesir.html" class="is-button">View Project</a>
 
                 </div>
             </div>
@@ -319,7 +322,7 @@
                         <h3>Portraits</h3>
                         <p>Photography</p>
                     </div>
-                    <a href="#" class="is-button">View Project</a>
+                    <a href="works/portraits.html" class="is-button">View Project</a>
 
                 </div>
             </div>
@@ -374,6 +377,47 @@
         </div>
         <p class="footerbigtext">IMLKSTUDIO</p>
     </section>
+    <script>
+        // Select the "know-us" section
+        const knowUsSection = document.querySelector('.know-us');
+
+        // Function to change the CSS variables
+        const changeColors = () => {
+            document.documentElement.style.setProperty('--blacks', '#F5F5F5');
+            document.documentElement.style.setProperty('--whites', '#141414');
+            document.documentElement.style.setProperty('--greys', '#4d4d4d');
+        };
+
+        // Function to reset the CSS variables when scrolled to the top
+        const resetColors = () => {
+            document.documentElement.style.setProperty('--blacks', '#141414');
+            document.documentElement.style.setProperty('--whites', '#F5F5F5');
+            document.documentElement.style.setProperty('--greys', '#8b8b8b');
+        };
+
+        // Create an Intersection Observer for the "know-us" section
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    changeColors();
+                }
+            });
+        }, {
+            threshold: 0.6 // 40% in view
+        });
+
+        // Observe the "know-us" section
+        observer.observe(knowUsSection);
+
+        // Listen for scroll events to detect when the page is at the very top
+        window.addEventListener('scroll', () => {
+            if (window.scrollY === 0) {
+                resetColors();
+            }
+        });
+
+
+    </script>
     <script src="script.js"></script>
 </body>
 
